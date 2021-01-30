@@ -1,0 +1,40 @@
+net/minecraft/BlockUtil$IntBounds <init> (II)V i->min i2->max
+net/minecraft/CrashReport <init> (Ljava/lang/String;Ljava/lang/Throwable;)V s->title throwable->exception
+net/minecraft/CrashReport addCategory (Ljava/lang/String;)Lnet/minecraft/CrashReportCategory; s->category
+net/minecraft/CrashReport addCategory (Ljava/lang/String;I)Lnet/minecraft/CrashReportCategory; s->category i->index
+net/minecraft/CrashReport getErrorComment ()Ljava/lang/String; strings->messages
+net/minecraft/CrashReport forThrowable (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/CrashReport; throwable->exception s->title
+net/minecraft/CrashReportCategory <init> (Lnet/minecraft/CrashReport;Ljava/lang/String;)V s->title
+net/minecraft/CrashReportCategory formatLocation (III)Ljava/lang/String; i->x i2->y i3->z i4->chunkX i5->chunkZ i7->chunkSectionY
+net/minecraft/CrashReportCategory setDetail (Ljava/lang/String;Ljava/lang/Object;)Lnet/minecraft/CrashReportCategory; s->key object->value
+net/minecraft/CrashReportCategory setDetailError (Ljava/lang/String;Ljava/lang/Throwable;)V s->key throwable->exception
+net/minecraft/client/Minecraft crash (Lnet/minecraft/CrashReport;)V file->crashReportsDir file2->crashReportFile
+net/minecraft/client/Minecraft pickBlock ()V flag->isInstaBuild
+net/minecraft/client/Minecraft createClientPackAdapter (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/server/packs/PackResources;Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;Lnet/minecraft/server/packs/repository/Pack$Position;Lnet/minecraft/server/packs/repository/PackSource;)Lnet/minecraft/server/packs/repository/Pack; s->id flag->required i->packFormat supplier2->packSupplier
+net/minecraft/client/Camera setup (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity;ZZF)V flag->detached flag2->mirror f->rotation
+net/minecraft/client/Screenshot takeScreenshot (IILcom/mojang/blaze3d/pipeline/RenderTarget;)Lcom/mojang/blaze3d/platform/NativeImage; i->width i2->height
+net/minecraft/client/main/Main main ([Ljava/lang/String;)V strings->args
+net/minecraft/client/gui/components/AbstractWidget <init> (IIIILnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/AbstractButton <init> (IIIILnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/Button <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/Button <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/client/gui/components/Button$OnTooltip;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex i8->textureWidth i9->textureHeight component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex i8->textureWidth i9->textureHeight component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/client/gui/components/Button$OnTooltip;Lnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex i8->textureWidth i9->textureHeight component->title
+net/minecraft/client/gui/components/ImageButton setPosition (II)V i->x i2->y
+net/minecraft/client/gui/components/ImageButton renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V i3->yTex
+net/minecraft/client/gui/components/OptionButton <init> (IIIILnet/minecraft/client/Option;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/screens/Screen <init> (Lnet/minecraft/network/chat/Component;)V component->title
+net/minecraft/client/Option <init> (Ljava/lang/String;)V s->caption
+net/minecraft/client/BooleanOption <init> (Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;)V s->caption predicate->getter biConsumer->setter
+net/minecraft/client/BooleanOption <init> (Ljava/lang/String;Lnet/minecraft/network/chat/Component;Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;)V s->caption component->tooltipText predicate->getter biConsumer->setter
+net/minecraft/client/CycleOption <init> (Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;)V s->caption predicate->getter biConsumer->setter
+net/minecraft/client/BooleanOption <init> (Ljava/lang/String;Ljava/util/function/BiConsumer;Ljava/util/function/BiFunction;)V s->caption biConsumer->setter biFunction->toString
+net/minecraft/client/ProgressOption <init> (Ljava/lang/String;DDFLjava/util/function/Function;Ljava/util/function/BiConsumer;Ljava/util/function/BiFunction;)V s->caption d->minValue d2->maxValue f->steps function->getter biConsumer->setter biFunction->toString
+net/minecraft/data/Main main ([Ljava/lang/String;)V strings->args
+net/minecraft/DetectedVersion <init> (Lcom/google/gson/JsonObject;)V jsonObject->json
+net/minecraft/server/dedicated/Settings$MutableValue <init> (Ljava/lang/String;Lnet/minecraft/server/dedicated/Settings;Ljava/util/function/Function;)V s->key object->value function->serializer
+net/minecraft/server/packs/repository/Pack <init> (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackCompatibility;Lnet/minecraft/server/packs/repository/Pack$Position;ZLnet/minecraft/server/packs/repository/PackSource;)V s->id flag->required component->title component2->description packCompatibility->compatibility position->defaultPosition flag2->fixedPosition
+net/minecraft/server/TickTask <init> (ILjava/lang/Runnable;)V i->tick
+net/minecraft/server/Main main ([Ljava/lang/String;)V strings->args
