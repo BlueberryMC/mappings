@@ -1,7 +1,8 @@
-public net.minecraft.world.inventory.MenuType <init>(Lnet/minecraft/world/inventory/MenuType$MenuSupplier;)V
-public net.minecraft.client.gui.screens.MenuScreens register(Lnet/minecraft/world/inventory/MenuType;Lnet.minecraft.client.gui.screens.MenuScreens$ScreenConstructor;)V
+public net.minecraft.world.inventory.MenuType <init>(Lnet.minecraft.world.inventory.MenuType$MenuSupplier;)V
+public net.minecraft.client.gui.screens.MenuScreens register(Lnet.minecraft.world.inventory.MenuType;Lnet.minecraft.client.gui.screens.MenuScreens$ScreenConstructor;)V
 public net.minecraft.client.gui.screens.MenuScreens$ScreenConstructor
 public net.minecraft.client.renderer.blockentity.BlockEntityRenderers register(Lnet.minecraft.world.level.block.entity.BlockEntity;Lnet.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;)V
+public net.minecraft.world.level.biome.BiomeGenerationSettings$Builder surfaceBuilder
 public net.minecraft.world.level.biome.BiomeGenerationSettings$Builder carvers
 public net.minecraft.world.level.biome.BiomeGenerationSettings$Builder features
 public net.minecraft.world.level.biome.BiomeGenerationSettings$Builder structureStarts
