@@ -74,7 +74,7 @@ net/minecraft/world/entity/Entity setNoGravity (Z)V flag->noGravity
 net/minecraft/world/entity/Entity playSound (Lnet/minecraft/sounds/SoundEvent;FF)V f->volume f2->pitch
 net/minecraft/world/entity/Entity playSwimSound (Lnet/minecraft/sounds/SoundEvent;FF)V f->volume
 net/minecraft/world/entity/Entity moveTo (DDD)V d->x d2->y d3->z
-net/minecraft/world/entity/Entity moveTo (Lnet/minecraft/core/BlockPos;FF) blockPos->pos f->yRot f2->xRot
+net/minecraft/world/entity/Entity moveTo (Lnet/minecraft/core/BlockPos;FF)V blockPos->pos f->yRot f2->xRot
 net/minecraft/world/entity/Entity moveTo (DDDFF)V d->x d2->y d3->z f->yRot f2->xRot
 net/minecraft/world/entity/Entity setOldPosAndRot ()V d->x d2->y d3->z
 net/minecraft/world/entity/Entity distanceTo (Lnet/minecraft/world/entity/Entity;)F f->dx f2->dy f3->dz
