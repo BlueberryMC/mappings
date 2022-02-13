@@ -1,0 +1,98 @@
+com/mojang/blaze3d/vertex/VertexConsumer vertex (Lcom/mojang/math/Matrix3f;FFF)Lcom/mojang/blaze3d/vertex/VertexConsumer; f->x f2->y f3->z
+com/mojang/blaze3d/vertex/VertexConsumer vertex (Lcom/mojang/math/Matrix4f;FFF)Lcom/mojang/blaze3d/vertex/VertexConsumer; f->x f2->y f3->z
+net/minecraft/BlockUtil$IntBounds <init> (II)V i->min i2->max
+net/minecraft/client/BooleanOption <init> (Ljava/lang/String;Ljava/util/function/BiConsumer;Ljava/util/function/BiFunction;)V s->caption biConsumer->setter biFunction->toString
+net/minecraft/client/BooleanOption <init> (Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;)V s->caption predicate->getter biConsumer->setter
+net/minecraft/client/BooleanOption <init> (Ljava/lang/String;Lnet/minecraft/network/chat/Component;Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;)V s->caption component->tooltipText predicate->getter biConsumer->setter
+net/minecraft/client/Camera setup (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity;ZZF)V flag->detached flag2->mirror f->rotation
+net/minecraft/client/CycleOption <init> (Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/function/BiConsumer;)V s->caption predicate->getter biConsumer->setter
+net/minecraft/client/gui/components/AbstractButton <init> (IIIILnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/AbstractWidget <init> (IIIILnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/Button <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/Button <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/client/gui/components/Button$OnTooltip;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/EditBox <init> (Lnet/minecraft/client/gui/Font;IIIILnet/minecraft/client/gui/components/EditBox;Lnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height editBox->parent component->title
+net/minecraft/client/gui/components/EditBox <init> (Lnet/minecraft/client/gui/Font;IIIILnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex i8->textureWidth i9->textureHeight component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/client/gui/components/Button$OnTooltip;Lnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex i8->textureWidth i9->textureHeight component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;IILnet/minecraft/client/gui/components/Button$OnPress;Lnet/minecraft/network/chat/Component;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex i8->textureWidth i9->textureHeight component->title
+net/minecraft/client/gui/components/ImageButton <init> (IIIILnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height i5->xTexStart i6->yTexStart i7->yDiffTex component->title
+net/minecraft/client/gui/components/ImageButton renderButton (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V i3->yTex
+net/minecraft/client/gui/components/ImageButton setPosition (II)V i->x i2->y
+net/minecraft/client/gui/components/OptionButton <init> (IIIILnet/minecraft/client/Option;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V i->x i2->y i3->width i4->height component->title
+net/minecraft/client/gui/GuiComponent fillGradient (Lcom/mojang/math/Matrix4f;IIIIIII)V i->x1 i2->y1 i3->x2 i4->y2 i5->z i6->color1 i7->color2
+net/minecraft/client/gui/GuiComponent fillGradient (Lcom/mojang/math/Matrix4f;Lcom/mojang/blaze3d/vertex/BufferBuilder;IIIIIII)V i->x1 i2->y1 i3->x2 i4->y2 i5->blitOffset i6->color1 i7->color2 f->alpha1 f2->r1 f3->g1 f4->b1 f5->alpha2 f6->r2 f7->g2 f8->b2
+net/minecraft/client/gui/screens/Screen <init> (Lnet/minecraft/network/chat/Component;)V component->title
+net/minecraft/client/gui/screens/Screen keyPressed (III)Z i->key i2->scancode i3->mods
+net/minecraft/client/gui/screens/Screen render (Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V i->mouseX i2->mouseY f->deltaFrameTime
+net/minecraft/client/gui/screens/Screen renderComponentHoverEffect (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Style;II)V i->mouseX i2->mouseY
+net/minecraft/client/gui/screens/Screen renderComponentTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V list->components i->mouseX i2->mouseY
+net/minecraft/client/gui/screens/Screen renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V list->components i->mouseX i2->mouseY
+net/minecraft/client/gui/screens/Screen renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;Ljava/util/Optional;II)V list->components optional->tooltipComponent i->mouseX i2->mouseY list2->clientTooltipComponents
+net/minecraft/client/gui/screens/Screen renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/network/chat/Component;II)V i->mouseX i2->mouseY
+net/minecraft/client/gui/screens/Screen renderTooltip (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/item/ItemStack;II)V i->mouseX i2->mouseY
+net/minecraft/client/gui/screens/Screen renderTooltipInternal (Lcom/mojang/blaze3d/vertex/PoseStack;Ljava/util/List;II)V list->components i->mouseX i2->mouseY clientTooltipComponent->component clientTooltipComponent2->component clientTooltipComponent3->component f->originalBlitOffset i5->width i15->i i16->i
+net/minecraft/client/main/Main main ([Ljava/lang/String;)V strings->args
+net/minecraft/client/Minecraft crash (Lnet/minecraft/CrashReport;)V file->crashReportsDir file2->crashReportFile
+net/minecraft/client/Minecraft createClientPackAdapter (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/server/packs/PackResources;Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;Lnet/minecraft/server/packs/repository/Pack$Position;Lnet/minecraft/server/packs/repository/PackSource;)Lnet/minecraft/server/packs/repository/Pack; s->id flag->required i->packFormat supplier2->packSupplier
+net/minecraft/client/Minecraft fillReport (Lnet/minecraft/client/resources/language/LanguageManager;Ljava/lang/String;Lnet/minecraft/client/Options;Lnet/minecraft/CrashReport;)V s->launchedVersion
+net/minecraft/client/Minecraft pickBlock ()V flag->isInstaBuild
+net/minecraft/client/multiplayer/ClientLevel sendBlockUpdated (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V blockState->oldState blockState2->newState i->flags
+net/minecraft/client/Option <init> (Ljava/lang/String;)V s->caption
+net/minecraft/client/ProgressOption <init> (Ljava/lang/String;DDFLjava/util/function/Function;Ljava/util/function/BiConsumer;Ljava/util/function/BiFunction;)V s->caption d->minValue d2->maxValue f->steps function->getter biConsumer->setter biFunction->toString
+net/minecraft/client/renderer/LevelRenderer blockChanged (Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V blockState->oldState blockState2->newState i->flags
+net/minecraft/client/Screenshot takeScreenshot (IILcom/mojang/blaze3d/pipeline/RenderTarget;)Lcom/mojang/blaze3d/platform/NativeImage; i->width i2->height
+net/minecraft/client/User <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V s->name s2->uuid s3->accessToken s4->type
+net/minecraft/client/User$Type <init> (Ljava/lang/String;)V s->name
+net/minecraft/commands/Commands$CommandSelection <init> (ZZ)V flag1->includeIntegrated flag2->includeDedicated
+net/minecraft/core/BlockPos <init> (DDD)V d->x d2->y d3->z
+net/minecraft/core/BlockPos <init> (III)V i->x i2->y i3->z
+net/minecraft/core/Vec3i <init> (DDD)V d->x d2->y d3->z
+net/minecraft/core/Vec3i <init> (III)V i->x i2->y i3->z
+net/minecraft/CrashReport <init> (Ljava/lang/String;Ljava/lang/Throwable;)V s->title throwable->exception
+net/minecraft/CrashReport addCategory (Ljava/lang/String;)Lnet/minecraft/CrashReportCategory; s->category
+net/minecraft/CrashReport addCategory (Ljava/lang/String;I)Lnet/minecraft/CrashReportCategory; s->category i->index
+net/minecraft/CrashReport forThrowable (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/CrashReport; throwable->exception s->title
+net/minecraft/CrashReport getErrorComment ()Ljava/lang/String; strings->messages
+net/minecraft/CrashReportCategory <init> (Lnet/minecraft/CrashReport;Ljava/lang/String;)V s->title
+net/minecraft/CrashReportCategory formatLocation (III)Ljava/lang/String; i->x i2->y i3->z i4->chunkX i5->chunkZ i7->chunkSectionY
+net/minecraft/CrashReportCategory setDetail (Ljava/lang/String;Ljava/lang/Object;)Lnet/minecraft/CrashReportCategory; s->key object->value
+net/minecraft/CrashReportCategory setDetailError (Ljava/lang/String;Ljava/lang/Throwable;)V s->key throwable->exception
+net/minecraft/data/Main main ([Ljava/lang/String;)V strings->args
+net/minecraft/DetectedVersion <init> (Lcom/google/gson/JsonObject;)V jsonObject->json
+net/minecraft/nbt/visitors/FieldSelector <init> (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V s->firstPath s2->secondPath tagType->type s3->name
+net/minecraft/nbt/visitors/FieldSelector <init> (Ljava/lang/String;Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V s->path tagType->type s2->name
+net/minecraft/nbt/visitors/FieldSelector <init> (Lnet/minecraft/nbt/TagType;Ljava/lang/String;)V tagType->type s->name
+net/minecraft/nbt/visitors/FieldTree <init> (I)V i->depth
+net/minecraft/server/dedicated/Settings$MutableValue <init> (Ljava/lang/String;Lnet/minecraft/server/dedicated/Settings;Ljava/util/function/Function;)V s->key object->value function->serializer
+net/minecraft/server/level/ServerLevel sendBlockUpdated (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V blockState->oldState blockState2->newState i->flags
+net/minecraft/server/level/ServerPlayer addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V entity->rootVehicle entity2->vehicle compoundTag3->rootVehicleTag compoundTag4->vehicleTag
+net/minecraft/server/Main main ([Ljava/lang/String;)V strings->args
+net/minecraft/server/packs/repository/Pack <init> (Ljava/lang/String;ZLjava/util/function/Supplier;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackCompatibility;Lnet/minecraft/server/packs/repository/Pack$Position;ZLnet/minecraft/server/packs/repository/PackSource;)V s->id flag->required component->title component2->description packCompatibility->compatibility position->defaultPosition flag2->fixedPosition
+net/minecraft/server/TickTask <init> (ILjava/lang/Runnable;)V i->tick
+net/minecraft/world/entity/Entity distanceTo (Lnet/minecraft/world/entity/Entity;)F f->dx f2->dy f3->dz
+net/minecraft/world/entity/Entity distanceToSqr (DDD)D d->dx d2->dy d3->dz
+net/minecraft/world/entity/Entity moveTo (DDD)V d->x d2->y d3->z
+net/minecraft/world/entity/Entity moveTo (DDDFF)V d->x d2->y d3->z f->yRot f2->xRot
+net/minecraft/world/entity/Entity moveTo (Lnet/minecraft/core/BlockPos;FF)V blockPos->pos f->yRot f2->xRot
+net/minecraft/world/entity/Entity pick (DFZ)Lnet/minecraft/world/phys/HitResult; d->distance flag->liquid
+net/minecraft/world/entity/Entity playSound (Lnet/minecraft/sounds/SoundEvent;FF)V f->volume f2->pitch
+net/minecraft/world/entity/Entity playSwimSound (Lnet/minecraft/sounds/SoundEvent;FF)V f->volume
+net/minecraft/world/entity/Entity setNoGravity (Z)V flag->noGravity
+net/minecraft/world/entity/Entity setOldPosAndRot ()V d->x d2->y d3->z
+net/minecraft/world/entity/Entity setSilent (Z)V flag->silent
+net/minecraft/world/entity/Mob dropLeash (ZZ)V flag->notify flag2->dropLead
+net/minecraft/world/inventory/AnvilMenu createResult ()V itemStack->left itemStack2->result itemStack3->right map->enchantments map2->rightEnchantments i2->repairCost i4->damageValue i5->itemCountCost i7->leftUsedDurability i8->rightUsedDurability i9->weightedDurability i10->damageSum i11->newDamageValue i12->leftEnchantmentLevel i13->newEnchantmentLevel flag2->doEnchant flag3->cannotEnchant flag4->canEnchant
+net/minecraft/world/level/block/Block popExperience (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;I)V serverLevel->level blockPos->pos i->exp
+net/minecraft/world/level/chunk/ChunkSource getChunk (IILnet/minecraft/world/level/chunk/ChunkStatus;Z)Lnet/minecraft/world/level/chunk/ChunkAccess; var1->x var2->z var3->chunkStatus var4->flag
+net/minecraft/world/level/chunk/ChunkSource getChunk (IIZ)Lnet/minecraft/world/level/LevelChunk; i->x i2->z
+net/minecraft/world/level/chunk/ChunkSource getChunkForLighting (II)Lnet/minecraft/world/level/BlockGetter; i->x i2->z
+net/minecraft/world/level/chunk/ChunkSource getChunkNow (II)Lnet/minecraft/world/level/LevelChunk; i->x i2->z
+net/minecraft/world/level/chunk/ChunkSource hasChunk (II)Z i->x i2->z
+net/minecraft/world/level/Level destroyBlock (Lnet/minecraft/core/BlockPos;ZLnet/minecraft/world/Entity;I)Z flag->destroyBlockEntity i->flags flag2->success
+net/minecraft/world/level/Level getChunk (II)Lnet/minecraft/world/level/LevelChunk; i->x i2->z
+net/minecraft/world/level/Level getChunk (IILnet/minecraft/world/level/chunk/ChunkStatus;Z)Lnet/minecraft/world/level/chunk/ChunkAccess; i->x i2->z
+net/minecraft/world/level/Level removeBlock (Lnet/minecraft/core/BlockPos;Z)Z flag->notify
+net/minecraft/world/level/Level sendBlockUpdated (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/state/BlockState;I)V var1->blockPos var2->oldState var3->newState var4->flags
+net/minecraft/world/level/Level setBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z i->flags
+net/minecraft/world/level/Level setBlock (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;II)Z i->flags
+net/minecraft/world/level/pathfinder/Path createFromStream (Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/level/pathfinder/Path; flag->canReach i->nextNodeIndex i2->targetCount set->targetNodes i4->nodeCount list->nodeList nodes->openSet nodes2->closedSet
